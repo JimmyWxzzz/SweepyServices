@@ -7,9 +7,13 @@ plugins {
 
 group = 'com'
 version = '0.0.1-SNAPSHOT'
+<<<<<<< HEAD
 
 sourceCompatibility = '17'
 
+=======
+sourceCompatibility = "15"
+>>>>>>> c853e01 (change java version)
 
 configurations {
     compileOnly {
@@ -78,4 +82,8 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+<<<<<<< HEAD
 targetCompatibility = JavaVersion.VERSION_17
+=======
+targetCompatibility = JavaVersion.VERSION_15
+>>>>>>> c853e01 (change java version)
