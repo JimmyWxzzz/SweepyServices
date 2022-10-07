@@ -7,13 +7,9 @@ plugins {
 
 group = 'com'
 version = '0.0.1-SNAPSHOT'
-<<<<<<< HEAD
 
 sourceCompatibility = '17'
 
-=======
-sourceCompatibility = "15"
->>>>>>> f40b5bbd17da8180b2a610c814985c83adca5ed5
 
 configurations {
     compileOnly {
@@ -82,8 +78,5 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
-<<<<<<< HEAD
+
 targetCompatibility = JavaVersion.VERSION_17
-=======
-targetCompatibility = JavaVersion.VERSION_15
->>>>>>> f40b5bbd17da8180b2a610c814985c83adca5ed5

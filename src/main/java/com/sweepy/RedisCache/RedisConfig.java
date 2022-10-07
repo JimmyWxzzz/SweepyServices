@@ -19,7 +19,7 @@ import java.io.Serializable;
 @EnableRedisRepositories
 public class RedisConfig {
 
-    @Bean()
+    @Bean
     public LettuceConnectionFactory redisConnectionFactory(RedisDBProperties redisDBProperties) {
         RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration();
         redisStandaloneConfiguration.setHostName(redisDBProperties.getHost());
