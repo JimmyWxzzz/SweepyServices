@@ -1,6 +1,6 @@
 package com.sweepy.security.securityConfig;
 
-import com.sweepy.security.securityFilters.*;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
