@@ -7,11 +7,9 @@ plugins {
 
 group = 'com'
 version = '0.0.1-SNAPSHOT'
-<<<<<<< HEAD
+
 sourceCompatibility = '17'
-=======
-sourceCompatibility = "15"
->>>>>>> c853e01 (change java version)
+
 
 configurations {
     compileOnly {
@@ -42,8 +40,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.7.4'
     implementation 'redis.clients:jedis:4.2.3'
 
-    implementation 'org.flywaydb:flyway-core'
-     runtimeOnly 'org.flywaydb:flyway-mysql'
+//    implementation 'org.flywaydb:flyway-core'
+//     runtimeOnly 'org.flywaydb:flyway-mysql'
 
     implementation 'org.springframework.security:spring-security-core:5.7.3'
     implementation 'org.springframework.boot:spring-boot-starter-security'
@@ -80,4 +78,4 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
-targetCompatibility = JavaVersion.VERSION_15
+targetCompatibility = JavaVersion.VERSION_17
