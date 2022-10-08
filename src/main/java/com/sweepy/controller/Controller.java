@@ -23,7 +23,7 @@ public class Controller {
         this.userService = userService;
     }
 
-    @GetMapping("/")
+    @RequestMapping("/")
     public String home() {
         return "this is the home page";
     }
