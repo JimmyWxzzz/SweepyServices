@@ -22,6 +22,11 @@ public class Controller {
         this.urlService = urlService;
         this.userService = userService;
     }
+
+    @GetMapping
+    public String home() {
+        return "this is the home page";
+    }
     @PostMapping("/longToShort")
     public String longtoShort(@Param("method") String method, @Param("url") String url, HttpServletResponse response) {
         return  urlService.longToShort(url, method);
