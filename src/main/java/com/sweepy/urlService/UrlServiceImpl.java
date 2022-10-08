@@ -53,8 +53,10 @@ public class UrlServiceImpl implements UrlService {
             if (!isValid(protocol + longUrl)) {
                 return "You must enter a valid long Url.";
             } else if (entry == null || !Objects.equals(entry.getMethod(), method)) {
-                SequenceIdService ser = new SequenceIdService(redisTemplateId);
-                Long Id = ser.getNextSequenceIdbyAtomic();
+//                SequenceIdService ser = new SequenceIdService(redisTemplateId);
+//                Long Id = ser.getNextSequenceIdbyAtomic();
+                UrlTable maxIdItem = urlRepository.findFirstByOrderByIdDesc();
+                long Id = maxIdItem.getId();
                 if (Objects.equals(method, "base62")) {
                     shortUrl = base62Converter.encode(Math.toIntExact(Id));
                 } else if (Objects.equals(method, "random")) {
